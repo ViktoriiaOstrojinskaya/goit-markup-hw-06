@@ -596,7 +596,8 @@ img {
   margin-left: 70px;
 }
 
-.soc-title {
+.soc-title,
+.email-title {
   font-weight: 700;
   line-height: 1.14;
   text-transform: uppercase;
@@ -750,15 +751,14 @@ img {
   width: 528px;
   min-height: 581px;
   background: var(--btn-color);
+  border: 1px solid rgba(33, 33, 33, 0.2);
   box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
     0px 2px 1px rgba(0, 0, 0, 0.2);
   border-radius: 4px;
 
-  transition: transform 250ms var(--timing-function);
-}
+  padding: 75px 40px;
 
-.modal-thumb {
-  position: relative;
+  transition: transform 250ms var(--timing-function);
 }
 
 .modal-close-btn {
@@ -782,4 +782,76 @@ img {
   opacity: 0;
   visibility: hidden;
   pointer-events: none;
+}
+
+.modal-title {
+  margin-bottom: 30px;
+
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 1.15;
+  text-align: center;
+  color: var(--main-color);
+}
+
+.modal-input {
+  width: 100%;
+  height: 40px;
+  border: 1px solid rgba(33, 33, 33, 0.2);
+  border-radius: 4px;
+
+  margin-bottom: 28px;
+}
+
+.modal-btn,
+.footer-btn {
+  width: 200px;
+  height: 50px;
+
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 1.87;
+  align-items: center;
+  text-align: center;
+  letter-spacing: 0.06em;
+  color: var(--second-color);
+
+  background: var(--akcent-color);
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+  border-radius: 4px;
+}
+
+.modal-btn {
+  display: block;
+  margin: 0 auto;
+}
+
+/* Футер рассылка */
+
+.footer-form {
+  display: block;
+  align-items: center;
+  justify-content: center;
+}
+
+.footer-input {
+  width: 358px;
+  height: 50px;
+
+  border: 1px solid rgba(255, 255, 255, 0.3);
+  box-shadow: (0px 4px 4px rgba(0, 0, 0, 0.15));
+  border-radius: 4px;
+  background-color: transparent;
+}
+
+.footer-btn {
+  margin-left: 12px;
+}
+
+.email-title {
+  margin-bottom: 20px;
+}
+
+.footer-email-section {
+  margin-left: 93px;
 }
